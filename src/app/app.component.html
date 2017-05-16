@@ -1,3 +1,41 @@
-<h1>
-  {{title}}
-</h1>
+<h1>Pipes</h1>
+<table class="table">
+  <thead class="thead-inverse">
+    <tr>
+      <th>Variable</th>
+      <th>Pipe</th>
+      <th>Producto</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">{{nombre}}</th>
+      <td>Uppercase</td>
+      <td>{{nombre|uppercase}}</td>
+    </tr>
+    <tr>
+      <th scope="row">{{nombre}}</th>
+      <td>Lowercase</td>
+      <td>{{nombre|lowercase}}</td>
+    </tr>
+    <tr>
+      <th scope="row">{{nombre}}</th>
+      <td>Slice 3</td>
+      <td>{{nombre|slice:3}}</td>
+    </tr>
+    <tr>
+      <th scope="row">{{nombre}}</th>
+      <td>Slice 0 3</td>
+      <td>{{nombre|slice:0:3}}</td>
+    </tr>
+    <tr>
+      <th scope="row">{{array}}</th>
+      <td>array 1 5</td>
+      <td>{{array|slice:1:5}}</td>
+    </tr>
+</table>
+
+<h2>Slice array</h2>
+<ul>
+  <li *ngFor="let item of array|slice:5">{{item}}</li>
+</ul>
