@@ -9,4 +9,6 @@ export class AppComponent {
   nombre = 'Juan Carlos';
   array=["1","2","3","4","5","6","7","8","9"];
   PI=Math.PI;
+  porcentaje=0.234;
+  importe=1234.5;
 }
