@@ -74,10 +74,41 @@
       <td>{{importe|currency:'EUR':true:'4.0-0'}}</td>
     </tr>
     <tr>
-      <th scope="row">{{importe}}</th>
-      <td>number:'2.2'</td>
-      <td>{{importe|number:'2.2'}}</td>
+      <th scope="row">{{valorDePromesa}}</th>
+      <td>async</td>
+      <td>{{valorDePromesa|json}}</td>
     </tr>
+    <tr>
+      <th scope="row">{{valorDePromesa}}</th>
+      <td>async</td>
+      <td>{{valorDePromesa|async}}</td>
+    </tr>
+    <tr>
+      <th scope="row">{{valorDePromesa}}</th>
+      <td>async</td>
+      <td>{{valorDePromesa|async}}</td>
+    </tr>
+    <tr>
+      <th scope="row">{{fecha}}</th>
+      <td>date</td>
+      <td>{{ fecha | date }}</td>
+    </tr>
+    <tr>
+      <th scope="row">{{fecha}}</th>
+      <td>date:medium</td>
+      <td>{{ fecha | date:medium }}</td>
+    </tr>
+    <tr>
+      <th scope="row">{{fecha}}</th>
+      <td>date:medium</td>
+      <td>{{ fecha | date:'medium' }}</td>
+    </tr>
+    <tr>
+      <th scope="row">{{fecha}}</th>
+      <td>date:'MMMM - dd'</td>
+      <td>{{ fecha | date:'MMMM - dd' }}</td>
+    </tr>
+
 </table>
 
 <h2>Slice array</h2>

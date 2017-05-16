@@ -20,4 +20,10 @@ export class AppComponent {
       casa: '19'
     }
   };
+  fecha = new Date('1972-10-25');
+  valorDePromesa = new Promise((resolve, reject) => {
+    setTimeout(() => resolve('Llegaron los datos'), 3500);
+  });
+
+
 }
