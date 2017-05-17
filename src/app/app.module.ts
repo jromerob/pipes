@@ -5,10 +5,14 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import {LOCALE_ID} from '@angular/core';
+import {CapitalizarPipe} from './pipes/capitalizar.pipe';
+import {DomseguroPipe} from './pipes/domSeguro.pipe';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CapitalizarPipe,
+    DomseguroPipe
   ],
   imports: [
     BrowserModule,
