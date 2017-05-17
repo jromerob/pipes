@@ -7,12 +7,14 @@ import { AppComponent } from './app.component';
 import {LOCALE_ID} from '@angular/core';
 import {CapitalizarPipe} from './pipes/capitalizar.pipe';
 import {DomseguroPipe} from './pipes/domSeguro.pipe';
+import {ContraseniaPipe} from './pipes/contrasenia.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     CapitalizarPipe,
-    DomseguroPipe
+    DomseguroPipe,
+    ContraseniaPipe
   ],
   imports: [
     BrowserModule,

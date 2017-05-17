@@ -113,6 +113,14 @@
             <td>capitalizado</td>
             <td>{{ nombre2|capitalizar:1:2:3:4 }}</td>
           </tr>
+          <tr>
+            <th scope="row">{{nombre}}</th>
+            <td>
+                contrasenia: activo
+                <button type='button' name='button' (click)='activo=!activo'> Activar-Desactivar </button>
+            </td>
+            <td>{{ nombre|contrasenia:activo}}</td>
+          </tr>
 
       </table>
 

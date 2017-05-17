@@ -28,6 +28,7 @@ export class AppComponent {
 
   youtubeUrl = 'https://www.youtube.com/embed/';
   video = 'RmUX6nFKNZk';
+  activo: boolean = true;
 
 
 }
